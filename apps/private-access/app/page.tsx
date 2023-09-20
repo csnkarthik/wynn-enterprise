@@ -10,7 +10,7 @@ export default async function Index() {
     <div className={styles.page}>
       <div className="wrapper">
         <div className='container'>
-          <h1>Private Access 3</h1>
+          <h1>Private Access 4</h1>
         </div>
       </div>
     </div>
