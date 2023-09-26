@@ -2,21 +2,20 @@
 ******************************************
  Theme
 ******************************************
-
 */
 
 /* default color */
-:root {
-    --txt-color: black;
-    --bg-color: orange;
-    --primary-color: green;
-    --secondary-color: orange;
-    --secondary-color-hover: blue;
-    --secondary-color-success: purple;
+.Profile {
+    --txt-color: #1B4746;
+    --bg-color: #033;
+    --primary-color: #D9946D;
+    --secondary-color: #1B4746;
+    --secondary-color-hover: #008475;
+    --secondary-color-success: #8DD990;
 }
 
 /* dark mode */
-.darkMode {
+.DarkMode {
     --txt-color: red;
     --bg-color: black;
     --primary-color: blue;

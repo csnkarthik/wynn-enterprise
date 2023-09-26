@@ -1,0 +1,33 @@
+// ******************************************
+// Custom Variables
+// ******************************************
+$--txt-color: red; // black || white
+$--bg-color: purple; // black || white
+$--primary-color: var(--primary-color); // brown700
+$--secondary-color: var(--secondary-color);
+$--secondary-color-hover: blue;
+$--secondary-color-success: orange;
+
+// ******************************************
+// form Themes
+// ******************************************
+.Profile {
+    .form-control {
+        border-color: $brown500;
+        background-color: rgba(0, 0, 0, 0.21);
+        color: $white;
+
+        &:focus {
+            outline: 2px solid rgba(240, 147, 0, 1);
+        }
+
+        &:invalid:focus {
+            border-color: $invalid-feedback;
+        }
+    }
+    .dropdown-toggle.form-control:focus-visible {
+        &:before {
+            display: none;
+        }
+    }
+}
