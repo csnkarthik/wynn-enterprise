@@ -1,18 +1,14 @@
-import styles from './page.module.css';
-
-export default async function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
+import Link from "next/link";
+// import "../app/sytles/style/style.scss"
+function pages() {
   return (
-    <div className={styles.page}>
-      <div className="wrapper">
-        <div className='container'>
-          <h1>Private Access 2</h1>
-        </div>
-      </div>
+    <div className="pages">
+      page
+
     </div>
-  );
+  )
 }
+
+export default pages;
+
+

@@ -1,0 +1,24 @@
+@import "../../../sytles/style/style.scss";
+
+.thankyou {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    @include media-size(tablet) {
+        padding-bottom: 80px;
+    }
+
+    h1 {
+        line-height: 110%;
+        margin-top: 40px;
+    }
+
+    .content {
+        margin: 30px auto;
+
+        @include media-size(tablet) {
+            margin: 60 auto;
+        }
+    }
+}

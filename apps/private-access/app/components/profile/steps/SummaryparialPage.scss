@@ -1,0 +1,26 @@
+@import "../../../sytles/style/style.scss";
+
+.summaryDetail {
+    max-width: 730px;
+    margin: 0px auto;
+    margin-top: 40px;
+
+    @include media-size(tablet) {
+        margin-top: 75px;
+    }
+
+    .labels {
+        color: var(--primary-text-color);
+        font-family: $font-rustica-500;
+    }
+
+    div {
+        &:not(:last-child, :nth-child(3)) {
+            @extend .borderB;
+        }
+
+        padding: 10px 0;
+    }
+
+
+}

@@ -1,0 +1,104 @@
+@import "../style/style.scss";
+
+// ******************************************
+// step
+// ******************************************
+.step {
+    &s {
+        max-width: 325px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        @include media-size(tablet) {
+            min-width: 625px;
+        }
+
+    }
+
+    &-item {
+        text-align: center;
+        min-width: 55px;
+        color: var(--primary-text-color);
+        cursor: pointer;
+
+        @include media-size(big-mobile) {
+            min-width: 145px;
+        }
+
+        &.active {
+            .step-button {
+                background-color: var(--primary-text-color);
+                color: var(--bg-color);
+                pointer-events: none;
+            }
+        }
+
+        &.disabled {
+            .step-button {
+                border-color: $gray400;
+                color: $gray400;
+                cursor: not-allowed;
+                pointer-events: none;
+
+            }
+
+            .step-title {
+                color: $gray600;
+            }
+        }
+
+        &:not(:last-child) .step-button:after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: -20px;
+            width: 12px;
+            height: 1px;
+            background-color: var(--primary-text-color);
+
+
+
+            @include media-size(big-mobile) {
+                bottom: 0px;
+                right: -85px;
+                width: 28px;
+            }
+        }
+    }
+
+    &-button {
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        padding: 0px;
+        border: 1px solid var(--primary-text-color);
+        color: var(--primary-text-color);
+        background-color: transparent;
+        margin-bottom: 10px;
+        position: relative;
+        @include transition(all);
+    }
+
+    &-title {
+        text-transform: capitalize;
+        display: none;
+        font-family: $font-rustica-500;
+        color: var(--primary-text-color);
+
+        @include media-size(big-mobile) {
+            display: block;
+        }
+    }
+
+    &.step-titile-m {
+        display: block;
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+        font-family: $font-rustica-500;
+        color: var(--primary-text-color);
+    }
+
+}

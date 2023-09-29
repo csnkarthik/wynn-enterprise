@@ -1,4 +1,5 @@
-import './global.css';
+// import "./global.css";
+// import "./sytles/style/style.scss";
 
 export const metadata = {
   title: 'Welcome to private-access',

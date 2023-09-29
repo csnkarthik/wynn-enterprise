@@ -2,21 +2,24 @@
 ******************************************
  Theme
 ******************************************
-
 */
 
 /* default color */
-:root {
-    --txt-color: $blackjack;
-    --bg-color: orange;
-    --primary-color: green;
-    --secondary-color: orange;
-    --secondary-color-hover: blue;
-    --secondary-color-success: purple;
+.Profile {
+    --txt-color: #faf9f4;
+    --bg-color: #033;
+    --primary-color: #D9946D;
+    --primary-color-hover: #d98b6d;
+    --secondary-color: #1B4746;
+    --secondary-color-hover: #008475;
+    --secondary-color-success: #8DD990;
+    --dark-color-txt: #151515;
+    --primary-text-color: #ffd1b7;
+    --border-line-color: #d8d8d8;
 }
 
 /* dark mode */
-.darkMode {
+.DarkMode {
     --txt-color: red;
     --bg-color: black;
     --primary-color: blue;
