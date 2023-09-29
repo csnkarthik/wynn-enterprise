@@ -15,13 +15,6 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, './app/sytles/style')],
   },
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.devtool = 'source-map';
-    }
-
-    return config;
-  },
 };
 
 const plugins = [

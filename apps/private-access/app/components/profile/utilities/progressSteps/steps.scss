@@ -16,12 +16,10 @@
 
     }
 
-
-
     &-item {
         text-align: center;
         min-width: 55px;
-        color: var(--primary-color);
+        color: var(--primary-text-color);
         cursor: pointer;
 
         @include media-size(big-mobile) {
@@ -30,7 +28,7 @@
 
         &.active {
             .step-button {
-                background-color: var(--primary-color);
+                background-color: var(--primary-text-color);
                 color: var(--bg-color);
                 pointer-events: none;
             }
@@ -57,7 +55,7 @@
             right: -20px;
             width: 12px;
             height: 1px;
-            background-color: var(--primary-color);
+            background-color: var(--primary-text-color);
 
 
 
@@ -74,8 +72,8 @@
         width: 28px;
         height: 28px;
         padding: 0px;
-        border: 1px solid var(--primary-color);
-        color: var(--primary-color);
+        border: 1px solid var(--primary-text-color);
+        color: var(--primary-text-color);
         background-color: transparent;
         margin-bottom: 10px;
         position: relative;
@@ -86,7 +84,7 @@
         text-transform: capitalize;
         display: none;
         font-family: $font-rustica-500;
-        color: var(--primary-color);
+        color: var(--primary-text-color);
 
         @include media-size(big-mobile) {
             display: block;
@@ -100,7 +98,7 @@
         margin-bottom: 12px;
         text-transform: capitalize;
         font-family: $font-rustica-500;
-        color: var(--primary-color);
+        color: var(--primary-text-color);
     }
 
 }

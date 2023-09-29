@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import logo from "../../../../public/ProfileLogo/WynnPrivateAccess_Lockup_Bronze 1.png";
-
+import logo from "../../../../../public/image/WynnPrivateAccess_Lockup_Bronze 1.svg";
+import "./header.scss";
 function Logo() {
   return (
     <div className="container">

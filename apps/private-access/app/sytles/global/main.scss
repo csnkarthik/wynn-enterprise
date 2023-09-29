@@ -1,11 +1,20 @@
 @import "../variables/variables.scss";
 @import "../global/mixin.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 body {
     font-family: $font-rustica-300;
     color: var(--txt-color);
     background-color: var(--bg-color);
     @include font-size($base-font-size);
+}
+
+.container {
+    max-width: 1140px !important;
+}
+
+.borderB {
+    border-bottom: 1px solid var(--border-line-color);
 }
 
 .form-control {
@@ -47,5 +56,152 @@ h3,
 
     &::after {
         display: none;
+    }
+}
+
+p {
+    color: var(--txt-color);
+}
+
+.dropdown-menu {
+    width: 100%;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: $font-rustica-300;
+    padding: 10px 0px 15px;
+    margin: -3px 0px !important;
+    border-color: $gray400;
+
+    a:active,
+    a:visited {
+        background-color: $gray300;
+        color: $black
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.btn {
+    @include cta-button;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--dark-color-txt);
+    border: 1px solid var(--primary-color);
+
+    &:visited,
+    &:active,
+    &:first-child:active {
+        background-color: var(--primary-color-hover);
+        color: var(--dark-color-txt);
+        border: 1px solid var(--primary-color);
+    }
+
+    &:hover {
+        background-color: var(--primary-color-hover);
+        color: var(--dark-color-txt);
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.maxWidth730 {
+    max-width: 730px;
+    margin: 0 auto;
+}
+
+.maxWidth450 {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.maxWidth550 {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.phoneCheck>div,
+.checkTerm {
+    display: inline-block;
+    position: relative;
+
+    input[type=radio],
+    input[type=checkbox] {
+        display: none;
+    }
+
+    >label {
+        padding-left: 2rem;
+        position: relative;
+
+        &::before {
+            content: ' ';
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            top: 9px;
+            left: 2px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 2px;
+        }
+
+        &::after {
+            content: " ";
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 4px;
+            left: 6px;
+            background-color: var(--primary-color);
+            // border-radius: 50%;
+            display: none;
+        }
+
+        &.radioPhone {
+            &:before {
+                top: 0px;
+            }
+
+            &:before,
+            &:after {
+                border-radius: 11px;
+            }
+        }
+    }
+
+    &.checked {
+        label:after {
+            content: "\F272";
+            font-family: 'Bootstrap-icons';
+            background-color: transparent;
+            left: 7px;
+            top: 9px;
+            display: inline-block;
+        }
+    }
+
+    input[type=radio]:checked+label::after {
+        display: inline-block;
+    }
+
+}
+
+.submit-buttons {
+    width: 100%;
+    margin-top: 4px;
+
+    .btn-submit {
+        width: 100%;
+    }
+}
+
+.contentTab {
+    padding-bottom: 40px;
+
+    @include media-size(tablet) {
+        padding-bottom: 80px;
     }
 }

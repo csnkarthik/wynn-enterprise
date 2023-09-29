@@ -1,0 +1,47 @@
+@import "../style/style.scss";
+
+// ******************************************
+// header
+// ******************************************
+.logo-extention {
+    transform: translateX(0px);
+    width: 100%;
+}
+
+.logo {
+    @extend .logo-extention;
+    padding: 30px 0 20px 0px;
+
+    img {
+        width: 96px;
+    }
+}
+
+.welcome-logo {
+    @extend .logo-extention;
+
+    img {
+        margin-top: 45px;
+        width: 225px;
+        height: auto;
+
+        @include media-size(tablet) {
+            width: 373px;
+            margin-top: 76px;
+        }
+    }
+}
+
+.logo-larger {
+    .logo {
+        img {
+            width: 134px;
+            height: auto;
+
+            @include media-size(tablet) {
+                width: 162px;
+            }
+        }
+    }
+
+}

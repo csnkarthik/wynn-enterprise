@@ -7,27 +7,39 @@ $--primary-color: var(--primary-color); // brown700
 $--secondary-color: var(--secondary-color);
 $--secondary-color-hover: blue;
 $--secondary-color-success: orange;
+$border-outline: $brown500;
+$border-outline-focus: rgba(240, 147, 0, 1);
 
 // ******************************************
 // form Themes
 // ******************************************
 .Profile {
     .form-control {
-        border-color: $brown500;
+        border-color: $border-outline;
         background-color: rgba(0, 0, 0, 0.21);
         color: $white;
 
         &:focus {
-            outline: 2px solid rgba(240, 147, 0, 1);
+            outline: 2px solid $border-outline-focus;
         }
 
         &:invalid:focus {
             border-color: $invalid-feedback;
         }
     }
+
     .dropdown-toggle.form-control:focus-visible {
         &:before {
             display: none;
         }
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s;
+    }
+
+    .form-label {
+        color: #ffd1b7;
     }
 }

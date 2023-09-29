@@ -15,8 +15,8 @@
       {
         "name": "next"
       }
-    ],
-    "types": ["jest", "node"]
+    ]
+    // "types": ["jest", "node"]
   },
   "include": [
     "**/*.ts",
@@ -25,8 +25,9 @@
     "**/*.jsx",
     "../../apps/private-access/.next/types/**/*.ts",
     "../../dist/apps/private-access/.next/types/**/*.ts",
-    "next-env.d.ts"
-, "app/components/profile/utilities"  ],
+    "next-env.d.ts",
+    "app/components/profile/utilities"
+  ],
   "exclude": [
     "node_modules",
     "jest.config.ts",

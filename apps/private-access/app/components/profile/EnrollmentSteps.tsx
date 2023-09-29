@@ -1,10 +1,9 @@
 import React from 'react'
-import "../../sytles/header/header.scss"
-import Logo from './utilities/Logo';
-import StepDisplay from './utilities/StepDisplay';
+import Logo from './utilities/logo/Logo';
+import StepDisplay from './utilities/progressSteps/StepDisplay';
 function EnrollmentSteps() {
   return (
-    <section className='sub-header'>
+    <section className='sub-header' >
       <Logo />
       <StepDisplay />
     </section>
