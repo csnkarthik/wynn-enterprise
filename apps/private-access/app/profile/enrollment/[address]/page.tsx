@@ -8,6 +8,7 @@ import Error from "../error";
 function GetStarted(props: any) { // need a proper datatype
     const paramsAddress = props.params.address;
     const StepProgress: any = () => { // need a proper datatype
+        // step 3 of the enrollment page
         switch (paramsAddress) {
             case 'getstart':
                 return (<>
@@ -28,14 +29,15 @@ function GetStarted(props: any) { // need a proper datatype
                 </>)
                 break;
             default:
+                // default page if the url is different.
                 return (< Error />)
         }
     }
 
     return (
-        <>
+        <div className="container">
             {props.params.address && <StepProgress />}
-        </>
+        </div>
 
     )
 }

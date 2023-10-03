@@ -3,7 +3,8 @@ import Link from "next/link";
 function pages() {
   return (
     <div className="pages">
-      page
+      pagesdfsd
+
 
     </div>
   )

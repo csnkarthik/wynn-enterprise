@@ -15,7 +15,7 @@ function Step2() {
 
 
   return (
-    <UlDescription title={titl} description={desc}>
+    <UlDescription title={titl} description={desc} width=''>
       <form action="" className="">
         <fieldset className="field">
           <legend className="legends visually-hidden-focusable">
@@ -25,27 +25,27 @@ function Step2() {
             <label className="form-label"> As a Private Access member, your
               opinions matter to our team. During your stay,
               which elements make you feel valued and appreciated?</label>
-            <textarea  name="street" className="form-control" />
+            <textarea name="street" className="form-control" />
           </div>
 
           <div className="stepField mb-3">
             <label className="form-label"> As we strive to anticipate your needs,
               please indicate the reasons you repeatedly choose Wynn and Encore
               Las Vegas.</label>
-            <textarea  name="street" className="form-control" />
+            <textarea name="street" className="form-control" />
           </div>
 
           <div className="stepField mb-3">
             <label className="form-label">Because we take pride in providing personalized
               experiences, which elements of service or amenities make you feel special
               and recognized?</label>
-            <textarea  name="street" className="form-control" />
+            <textarea name="street" className="form-control" />
           </div>
 
           <div className="stepField mb-3">
             <label className="form-label"> Whether it happened at Wynn or another
               resort, please recall an experience that disappointed you in the past.</label>
-            <textarea  name="street" className="form-control" />
+            <textarea name="street" className="form-control" />
           </div>
 
 

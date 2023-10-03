@@ -72,9 +72,8 @@
     letter-spacing: 0.35px;
     border: 1px solid var(--secondary-color);
     border-radius: 2px;
-    padding: 10px 20px;
+    padding: 10px 20px !important;
     min-width: 200px;
-
     @include transition(background-color);
 }
 

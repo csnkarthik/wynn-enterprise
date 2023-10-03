@@ -1,7 +1,6 @@
 @import '../../../sytles/style/style.scss';
 
 .contentTab {
-    
 
     .main-content-desc,
     form {
@@ -116,5 +115,7 @@
         }
     }
 
- 
+    .invalid {
+        color: var(--text-error-message);
+    }
 }

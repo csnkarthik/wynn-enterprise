@@ -1,6 +1,6 @@
 import Comfirmation from 'apps/private-access/app/components/profile/signIn/Comfirmation'
 import React from 'react'
-
+// after setup projects
 function SignIn() {
   return (
     <Comfirmation
@@ -16,4 +16,4 @@ function SignIn() {
   )
 }
 
-export default SignIn
+export default SignIn;

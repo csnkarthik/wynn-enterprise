@@ -92,7 +92,7 @@ p {
     color: var(--dark-color-txt);
     border: 1px solid var(--primary-color);
 
-    &:visited,
+
     &:active,
     &:first-child:active {
         background-color: var(--primary-color-hover);
@@ -107,6 +107,7 @@ p {
     }
 }
 
+
 .maxWidth730 {
     max-width: 730px;
     margin: 0 auto;
@@ -118,7 +119,7 @@ p {
 }
 
 .maxWidth550 {
-    max-width: 450px;
+    max-width: 560px;
     margin: 0 auto;
 }
 
@@ -201,7 +202,17 @@ p {
 .contentTab {
     padding-bottom: 40px;
 
+    .title-header {
+        line-height: 110%;
+    }
+
     @include media-size(tablet) {
         padding-bottom: 80px;
+    }
+}
+
+.shorter-btn {
+    &.btn {
+        min-width: 130px;
     }
 }
